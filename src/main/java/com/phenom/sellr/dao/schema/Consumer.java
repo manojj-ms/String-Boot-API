@@ -1,8 +1,8 @@
-package com.example.crud.model;
+package com.phenom.sellr.dao.schema;
 import javax.persistence.*;
 @Entity
 @Table(name = "consumers")
-public class User {
+public class Consumer {
     private int consumer_id;
     private String profile_pic;
     private String email;
@@ -17,10 +17,10 @@ public class User {
     private Boolean is_facebook;
     private Boolean is_google;
 
-    public User() {
+    public Consumer() {
     }
 
-    public User(int consumer_id, String profile_pic, String email, String name, String contact, String password, String address_line1, String address_line2, String address_country, String address_postal, Boolean email_verified, Boolean is_facebook, Boolean is_google) {
+    public Consumer(int consumer_id, String profile_pic, String email, String name, String contact, String password, String address_line1, String address_line2, String address_country, String address_postal, Boolean email_verified, Boolean is_facebook, Boolean is_google) {
         this.consumer_id = consumer_id;
         this.profile_pic = profile_pic;
         this.email = email;
