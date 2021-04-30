@@ -15,8 +15,6 @@ public class Tags {
         this.name = name;
     }
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getTag_id() {
