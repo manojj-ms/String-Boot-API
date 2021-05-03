@@ -1,26 +1,31 @@
 package com.phenom.sellr.dao.schema;
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
 @Entity
 @Table(name = "consumers")
 public class Consumer {
     private int consumer_id;
-    private String profile_pic;
-    private String email;
+    private char profile_pic;
+    private char email;
     private Boolean email_verified;
-    private String name;
-    private String contact;
-    private String password;
-    private String address_line1;
-    private String address_line2;
-    private String address_country;
-    private String address_postal;
+    private char name;
+    private char contact;
+    private char password;
+    private char address_line1;
+    private char address_line2;
+    private char address_country;
+    private char address_postal;
     private Boolean is_facebook;
     private Boolean is_google;
 
     public Consumer() {
     }
 
-    public Consumer(int consumer_id, String profile_pic, String email, String name, String contact, String password, String address_line1, String address_line2, String address_country, String address_postal, Boolean email_verified, Boolean is_facebook, Boolean is_google) {
+    public Consumer(int consumer_id, char profile_pic, char email, char name, char contact, char password, char address_line1, char address_line2, char address_country, char address_postal, Boolean email_verified, Boolean is_facebook, Boolean is_google) {
         this.consumer_id = consumer_id;
         this.profile_pic = profile_pic;
         this.email = email;
@@ -47,75 +52,75 @@ public class Consumer {
         this.consumer_id = consumer_id;
     }
 
-    public String getProfile_pic() {
+    public char getProfile_pic() {
         return profile_pic;
     }
 
-    public void setProfile_pic(String profile_pic) {
+    public void setProfile_pic(char profile_pic) {
         this.profile_pic = profile_pic;
     }
 
-    public String getAddress_line1() {
+    public char getAddress_line1() {
         return address_line1;
     }
 
-    public void setAddress_line1(String address_line1) {
+    public void setAddress_line1(char address_line1) {
         this.address_line1 = address_line1;
     }
 
-    public String getEmail() {
+    public char getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(char email) {
         this.email = email;
     }
 
-    public String getPassword() {
+    public char getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(char password) {
         this.password = password;
     }
 
-    public String getContact() {
+    public char getContact() {
         return contact;
     }
 
-    public void setContact(String contact) {
+    public void setContact(char contact) {
         this.contact = contact;
     }
 
-    public String getName() {
+    public char getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(char name) {
         this.name = name;
     }
 
-    public String getAddress_line2() {
+    public char getAddress_line2() {
         return address_line2;
     }
 
-    public void setAddress_line2(String address_line2) {
+    public void setAddress_line2(char address_line2) {
         this.address_line2 = address_line2;
     }
 
-    public String getAddress_country() {
+    public char getAddress_country() {
         return address_country;
     }
 
-    public void setAddress_country(String address_country) {
+    public void setAddress_country(char address_country) {
         this.address_country = address_country;
     }
 
-    public String getAddress_postal() {
+    public char getAddress_postal() {
         return address_postal;
     }
 
-    public void setAddress_postal(String address_postal) {
+    public void setAddress_postal(char address_postal) {
         this.address_postal = address_postal;
     }
 
